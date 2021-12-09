@@ -1,0 +1,242 @@
+.bg-wrapper {
+    background-color: #fefafa;
+}
+
+.product-detail-area {
+    margin-bottom: 50px;
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        background-color: unset;
+        color: $red;
+    }
+
+    .tab-content {
+        border-color: $red !important;
+
+        .other-products-title {
+            margin-bottom: 15px;
+            color: $red;
+        }
+
+        .other-products-wrapper {
+            max-height: 450px;
+            overflow: auto;
+
+            li {
+                width: 33.33333%;
+            }
+        }
+
+        .tab-content {
+            .product-wrapper {
+                .product-image {
+                    min-height: 280px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        max-width: 450px;
+                        max-height: 300px;
+                    }
+                }
+
+                .product-content {
+                    .product-title {
+                        font-size: $font18;
+                    }
+
+                    .product-text {
+                        p {
+                            width: 70%;
+                            margin: auto;
+                        }
+                    }
+
+                    .product-info {
+                        margin-top: 30px;
+
+                        .product-barcode {
+                            span {
+                                color: red;
+                                text-decoration: underline;
+                                margin-left: 10px;
+                            }
+                        }
+
+                        a {
+                            background: #e20613;
+                            color: #fff;
+                            padding: 10px;
+                            display: inline-block;
+                            font-size: 12px;
+                            font-weight: 500;
+                            margin: 1rem auto 0 auto;
+                            display: block;
+                            width: 100%;
+                            max-width: 100px;
+
+                            &:hover {
+                                text-decoration: none;
+                                background: #cb0511;
+                            }
+
+                            i {
+                                font-size: 17px;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.background-image {
+    min-height: 112vh;
+    background: url('#{$imagePath}/dogus_cay_bg_yeni.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.corporate-detail-area {
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        background-color: unset;
+        color: $red;
+    }
+
+    .leftMenu {
+        .nav {
+            .nav-item {
+                .active {
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    .tab-wrapper {
+        border-color: $red !important;
+
+        .card {
+            &:nth-child(1) {
+                .card-header {
+                    background: $red;
+                }
+            }
+
+            &:nth-child(2) {
+                .card-header {
+                    background: #e41e2a;
+                }
+            }
+
+            &:nth-child(3) {
+                .card-header {
+                    background: #e73742;
+                }
+            }
+
+            &:nth-child(4) {
+                .card-header {
+                    background: #ea5059;
+                }
+            }
+        }
+
+        .title {
+            font-size: 20px;
+            color: $red;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .content {
+            min-height: 425px;
+            max-height: 425px;
+            overflow-y: auto;
+
+            .subtitle {
+                color: $red;
+                font-weight: 500;
+            }
+
+            p,
+            li {
+                font-size: 13.5px;
+
+                i {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .icon {
+            font-size: 30px;
+            color: $red;
+        }
+    }
+
+    .address,
+    .city {
+        font-weight: 500;
+    }
+
+    .phone {
+        font-weight: 500;
+
+        .title {
+            color: $red;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        .text {
+            color: #616161;
+            font-size: 14px;
+        }
+    }
+}
+
+#productLeftTab {
+    .nav-item {
+        margin-bottom: 5px;
+    }
+}
+
+.contact-form {
+    border: 1px solid $red;
+
+    .title {
+        font-weight: bold;
+    }
+
+    label {
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .form-control {
+        border-radius: 0;
+
+        &:focus,
+        &:active {
+            color: unset;
+            border-color: $red !important;
+            box-shadow: none !important;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+            ;
+        }
+    }
+
+    .btn-danger {
+        background: $red;
+
+        &:hover {}
+    }
+}

@@ -1,0 +1,228 @@
+.mobile-logo img {
+    width: 100px !important;
+}
+
+.main-logo {
+    position: absolute;
+    left: calc(50% - 80px);
+    top: 0;
+    z-index: 101;
+}
+
+.new-logo {
+    position: absolute;
+    z-index: 101;
+    left: calc(50% - 80px);
+    top: calc(50% - 65px);
+}
+
+.logo {
+    width: 160px;
+}
+
+.item-text-area {
+    display: none;
+}
+
+.home-product {
+    margin: 30px 0;
+    position: relative;
+
+    .image-area {
+        .row {
+            .column {
+                min-height: 450px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .text-area {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 1;
+
+        .item-left-side {
+            padding-right: 6rem;
+        }
+
+        .item-right-side {
+            padding-left: 6rem;
+        }
+
+        .item-title {
+            font: {
+                size: $font34;
+                weight: bold;
+            }
+
+            text-transform: uppercase;
+        }
+
+        .item-subtitle {
+            font: {
+                size: $font17;
+                weight: 500;
+                style: italic;
+            }
+
+            color: #7b7b7b;
+        }
+
+        .item-body {
+            p {
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+
+        .btn-outline-danger {
+            border-radius: 30px;
+            color: $red;
+
+            &:hover {
+                color: $white;
+            }
+
+            &:active {
+                color: $white;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.border-bottom {
+    border-image: linear-gradient(to right, $red 0%, $red 10%, $red 20%, $red 30%, transparent 40%, transparent 50%, transparent 60%, $red 70%, $red 80%, $red 90%, $red 100%) 1 stretch;
+}
+
+//goto top
+.go-top {
+    position: fixed;
+    z-index: 9;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #de0303;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        background: #c50303;
+        color: #fff;
+    }
+
+    &:active {
+        color: #fff;
+    }
+
+    &:focus {
+        color: #fff;
+    }
+}
+
+
+
+.scroll-down-area {
+    position: fixed;
+    bottom: 20px;
+    z-index: 999;
+    left: 48%;
+
+    a {
+        text-decoration: none;
+        color: $red;
+    }
+
+    //scroll-down effect
+    .chevron {
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+    }
+
+    .chevron:first-child {
+        animation: move 3s ease-out 1s infinite;
+    }
+
+    .chevron:nth-child(2) {
+        animation: move 3s ease-out 2s infinite;
+    }
+
+    .chevron:before,
+    .chevron:after {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 51%;
+        background: white;
+    }
+
+    .chevron:before {
+        left: 0;
+        transform: skew(0deg, 30deg);
+    }
+
+    .chevron:after {
+        right: 0;
+        width: 50%;
+        transform: skew(0deg, -30deg);
+    }
+
+    @keyframes move {
+        25% {
+            opacity: 1;
+
+        }
+
+        33% {
+            opacity: 1;
+            transform: translateY(30px);
+        }
+
+        67% {
+            opacity: 1;
+            transform: translateY(40px);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+        }
+    }
+
+    .text {
+        display: block;
+        margin-top: 75px;
+        margin-left: -30px;
+        font-size: 12px;
+        color: white;
+        text-transform: uppercase;
+        white-space: nowrap;
+        opacity: .25;
+        animation: pulse 2s linear alternate infinite;
+    }
+
+    @keyframes pulse {
+        to {
+            opacity: 1;
+        }
+    }
+}

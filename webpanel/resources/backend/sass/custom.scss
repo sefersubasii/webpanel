@@ -1,0 +1,16 @@
+.custom-file-label::after {
+    content: 'Dosya';
+}
+
+.img-preview{
+    width: 200px;
+    max-height:200px;
+    border:1px solid #999;
+    margin-top: 5px;
+    margin-left: 1px;
+    overflow: hidden;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}

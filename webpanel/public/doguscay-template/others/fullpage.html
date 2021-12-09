@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../plugins/fullPage.js-master/dist/fullpage.css">
+    <style>
+        body{
+            margin: 0;
+        }
+        .box{
+            height: 50vh;
+        }
+        .box1{
+            background: #0f6674;
+        }
+        .box2{
+            background: #0b2e13;
+        }
+        .box3{
+            background: #0c5460;
+        }
+        .box4{
+            background: #000000;
+        }
+        .box5{
+            background: #1b1e21;
+        }
+    </style>
+</head>
+<body>
+<div id="fullpage" class="wrapper">
+    <div class="box box1 section"></div>
+    <div class="box box2 section"></div>
+    <div class="box box3 section"></div>
+    <div class="box box4 section"></div>
+    <div class="box box5 section"></div>
+</div>
+
+<script src="../plugins/jquery/jquery-3.4.1.min.js"></script>
+<script src="../plugins/fullPage.js-master/dist/fullpage.js"></script>
+<script>
+    document.getElementById('demosMenu').addEventListener('change', function(e){
+        var dropdown = document.getElementById('demosMenu');
+        window.location.href = dropdown.options[dropdown.selectedIndex].getAttribute('id') + '.html';
+    });
+
+</script>
+<script type="text/javascript">
+    let myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+        responsiveWidth: 900,
+        afterResponsive: function(isResponsive){
+
+        }
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.text-upper {
+    text-transform: uppercase;
+}
+
+#management a[aria-expanded=true]:after, .leftMenu a[aria-expanded=true]:after{
+    content: " ▴";
+}
+#management a[aria-expanded=false]:after, .leftMenu a[aria-expanded=false]:after{
+    content: " ▾";
+}

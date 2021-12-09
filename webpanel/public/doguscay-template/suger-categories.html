@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ürünlerimiz - Doğuş Çay</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="shortcut icon" href="images/doguscay-favicon.ico" />
+    <style>
+        .category-image-item:hover .image-text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            padding: 50px;
+            z-index: 1;
+        }
+
+        .category-image-item .border-area::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+        }
+
+        .category-image-item:hover .border-area img {
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+        }
+
+        .category-image-item:hover .border-area::before {
+            opacity: 0.25;
+        }
+
+        .category-image-item:hover .category-title {
+            border: 3px solid #FFFFFF;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            color: white;
+        }
+
+        .custom-nav .title {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .border-area img {
+            box-shadow: 12px 16px 0px -5px red;
+        }
+
+        .ustbaslik {
+            font-size: 38px;
+            color: #FFFFFF;
+            font-family: Poppins;
+            font-weight: 500;
+        }
+
+        .altbaslik {
+            font-size: 14px;
+            color: #FFFFFF;
+            font-family: Poppins;
+            font-weight: 500;
+        }
+
+        @media(max-width: 580px) {
+            .ustbaslik {
+                font-size: 18px;
+            }
+
+            .altbaslik {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body style="overflow-y: auto;" class="subPage">
+
+    <div class="wrapper bg-wrapper">
+        <div class="header position-relative">
+            <div class="main-logo d-none d-lg-block">
+                <a href="index.html">
+                    <img class="logo lazy" data-src="images/Doğuş%20Orta%20Logo.png" alt="doğuş çay">
+                </a>
+            </div>
+            <div class="header-area mb-5 h-auto">
+                <nav class="navbar position-relative">
+                    <div class="container top-area border-bottom py-2 px-0">
+                        <div class="top-left-area">
+                            <ul class="d-inline-block w-100">
+                                <div
+                                    class="mobile-dropdown d-flex justify-content-between align-items-center d-sm-none">
+                                    <div class="dropdown">
+                                        <a aria-expanded="false" aria-haspopup="true" role="button"
+                                            data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                            <span id="selected"><img class="d-none d-sm-inline" src="images/tr.png"
+                                                    alt="TR"> TR</span><span class="caret"></span></a>
+                                        <ul class="dropdown-menu" style="z-index: 99999;">
+                                            <li class="d-block"><a href="#">EN</a></li>
+                                            <li class="d-block"><a href="#">TR</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="top-right-area">
+                                        <ul class="float-right">
+                                            <li class="p-0"><a href="https://satis.doguscay.com.tr/"><i
+                                                        class="fa fa-cart-plus" style="color: white;"></i> Online
+                                                    Mağaza</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <li class="lang-area d-none d-sm-inline-block">
+                                    <div class="dropdown">
+                                        <a aria-expanded="false" aria-haspopup="true" role="button"
+                                            data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                            <span id="selected"><img class="d-none d-sm-inline-block"
+                                                    src="images/tr.png" alt="TR"> TR</span><span
+                                                class="caret"></span></a>
+                                        <ul class="dropdown-menu" style="z-index: 99999;">
+                                            <li class="d-block"><a href="#"><img src="images/en.png" alt="EN"> EN</a>
+                                            </li>
+                                            <li class="d-block"><a href="#"><img src="images/tr.png" alt="TR"> TR</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="lang-area d-none d-sm-inline-block"><a href="management.html">Hakkımızda</a>
+                                </li>
+                                <li class="products-dropdown d-none d-sm-inline-block"><a href="#">Ürünlerimiz <i class="fa fa-angle-down"></i></a>
+                                    <ul class="shadow">
+                                        <li><a class="nav-link" href="categories.html">Doğuş Çay</a></li>
+                                        <li><a class="nav-link" href="https://www.dogusyiyecekicecek.com.tr/">Doğuş Yiyecek veİçecek</a></li>
+                                        <li><a class="nav-link" href="suger-categories.html">Doğuş Şeker</a></li>
+                                        <li><a class="nav-link" href="categories.html">Doğuş Salça</a></li>
+                                        <li><a class="nav-link" href="https://www.dogusoriginalicetea.com.tr/">Doğuş Orıgınal Ice Tea</a></li>
+                                    </ul>
+                                </li>
+                                <li class="d-none d-sm-inline-block"><a
+                                        href="https://herdemtoprakicin.com/">Sürdürülebilir
+                                        Çay Tarımı</a></li>
+                                <li class="d-none d-sm-inline-block"><a href="contact.html">İletişim</a></li>
+                            </ul>
+                        </div>
+                        <div class="top-right-area d-none d-sm-block">
+                            <ul>
+                                <li><a href="https://satis.doguscay.com.tr/"><i class="fa fa-cart-plus"></i> Online
+                                        Mağaza</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile-hed d-flex justify-content-end align-items-center d-sm-none w-100 mt-3">
+                            <a href="index.html" class="mobile-logo d-block d-sm-none text-center">
+                                <img class="lazy" data-src="images/logo.png" alt="doğuş çay">
+                            </a>
+                            <ul class="mb-1">
+                                <li><a href="management.html">Hakkımızda</a></li>
+                                <li class="products-dropdown"><a href="#">Ürünlerimiz <i class="fa fa-angle-down"></i></a>
+                                    <ul class="shadow">
+                                        <li><a class="nav-link" href="categories.html">Doğuş Çay</a></li>
+                                        <li><a class="nav-link" href="https://www.dogusyiyecekicecek.com.tr/">Doğuş Yiyecek veİçecek</a></li>
+                                        <li><a class="nav-link" href="suger-categories.html">Doğuş Şeker</a></li>
+                                        <li><a class="nav-link" href="categories.html">Doğuş Salça</a></li>
+                                        <li><a class="nav-link" href="https://www.dogusoriginalicetea.com.tr/">Doğuş Orıgınal Ice Tea</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">İletişim</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container py-2 px-0">
+                        <div class="social-area d-none d-md-block">
+                            <ul>
+                                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div></div>
+                        <div class="d-flex align-items-center justify-content-end w-auto">
+                            <div class="search-area">
+                                <input type="search" class="" placeholder="Arama yapın.">
+                                <button><i class="fa fa-search"></i></button>
+                            </div>
+                            <div class="navbar-toggler-wrapper">
+                                <button class="navbar-toggler pr-0" type="button" data-toggle="collapse"
+                                    data-target="#collapsingNavbar">
+                                    <span class="fa fa-bars"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="collapse navbar-collapse" id="collapsingNavbar">
+                            <ul class="navbar-nav text-center">
+                                <li class="nav-item active">
+                                    <a class="nav-link active" href="index.html">Anasayfa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="categories.html">Doğuş Çay</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.dogusyiyecekicecek.com.tr/">Doğuş Yiyecek ve
+                                        İçecek</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="categories.html">Doğuş Şeker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="categories.html">Doğuş Salça</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://www.dogusoriginalicetea.com.tr/">Doğuş Orıgınal
+                                        Ice Tea</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="corporate-detail-area">
+            <div class="container py-4">
+                <div class="category-area custom-nav">
+                    <div class="row">
+                        <div class="col-md-12 text-center mb-5">
+                            <div class="position-relative category-banner suger-banner">
+                                <img class="w-100" src="images/seker_ust_baslik_resim.jpg" alt=""
+                                    style="min-height: 80px;">
+                                <div class="banner-divider"><img src="images/banner-divider.png" alt=""></div>
+                                <div class="title">
+                                    <div>
+                                        <span class="ustbaslik">Doğuş Şeker</span>
+                                        <ul>
+                                            <li><span class="altbaslik">Ürünlerimiz <i class="fa fa-angle-right"></i>
+                                            </li></span>
+                                            <span class="altbaslik">
+                                                <li>Doğuş Şeker</li>
+                                            </span>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center flex-wrap w-100">
+                            <div class="col-md-4 mb-4"> <a href="products_sugar.html" class="text-danger">
+                                    <div class="category-image-item position-relative">
+                                        <div class="border-area mb-4"> <img class="w-100" src="images/kup_seker_ust.jpg"
+                                                alt=""> </div>
+                                        <div class="image-text">
+                                            <div class="category-title text-center font-weight-bold mt-2"> Küp Şeker
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a> </div>
+
+                            <div class="col-md-4 mb-4"> <a href="products_sugar.html" class="text-danger">
+                                    <div class="category-image-item position-relative">
+                                        <div class="border-area mb-4"> <img class="w-100" src="images/toz_seker_ust.jpg"
+                                                alt=""> </div>
+                                        <div class="image-text">
+                                            <div class="category-title text-center font-weight-bold mt-2"> Toz Şeker
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a> </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer mt-5">
+            <div class="footer-area py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 mb-2">
+                            <div class="footer-address d-flex justify-content-start align-items-center">
+                                <div class="icon pr-2"><i class="fa fa-map-marker"></i></div>
+                                <div class="border-left pl-2">
+                                    <span class="d-block">Altıntepe Mah. Cihadiye Cad. No:94</span>
+                                    <span class="d-block">Maltepe - İstanbul</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="footer-phone d-flex justify-content-start align-items-center">
+                                <div class="icon pr-2"><i class="fa fa-phone"></i></div>
+                                <div class="border-left pl-2">
+                                    <span class="d-block"><a href="tel:902165875300">+90 216 587 53 00 (PBX)</a></span>
+                                    <span class="d-block">
+                                        <a href="tel:902163675300">+90 216 367 53 00</a>
+                                        <a class="d-inline-block d-md-block d-lg-inline-block" href="tel:902165183142">-
+                                            518 31 42</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="footer-call">
+                                <span class="d-block">Tüketici Danışma Hattı</span>
+                                <span class="d-block"><a href="tel:4449753">444 97 53</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-line">
+                    <div class="row">
+                        <div class="col-md-12 d-block d-md-none">
+                            <div class="social-area d-flex justify-content-center">
+                                <ul>
+
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a class="youtube" href="#"><i class="fa fa-youtube"></i></a></li>
+                                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center align-items-center py-3 footer-menu">
+                            <ul>
+                                <li><a href="management.html">Hakkımızda</a></li>
+                                <li><a href="categories.html">Doğuş Çay</a></li>
+                                <li><a href="https://www.dogusyiyecekicecek.com.tr/">Doğuş Yiyecek ve İçecek</a></li>
+                                <li><a href="categories.html">Doğuş Salça</a></li>
+                                <li><a href="categories.html">Doğuş Şeker</a></li>
+                                <li><a href="https://www.dogusoriginalicetea.com.tr/">Doğuş Original Ice Tea</a></li>
+                                <li><a href="https://herdemtoprakicin.com/">Sürdürülebilir Çay Tarımı</a></li>
+                                <li><a href="https://satis.doguscay.com.tr/">Online Mağaza</a></li>
+                                <li><a href="contact.html">İletişim</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container py-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-6 text-center text-sm-left order-last order-md-first">Copyright © 2020
+                            Doğuş Yiyecek İçecek</div>
+                        <div class="col-12 col-sm-6 text-center text-sm-right order-first order-md-last"><img
+                                class="lazy" data-src="images/kilavuzlogo.png" alt="Tek Kılavuz"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="js/all.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+.footer {
+
+    //height: 100vh;
+    .footer-area {
+        background-color: $footer;
+        color: $white;
+
+        .footer-line {
+            border-color: $white;
+        }
+
+        a {
+            color: $white;
+            font-size: $font13;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        i {
+            font-size: 40px;
+            width: 30px;
+        }
+
+        .footer-address {
+            font-size: $font13;
+        }
+
+        .footer-call {
+            span:first-child {
+                font-size: 20px;
+            }
+
+            span:last-child {
+                a {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .footer-menu {
+            ul {
+                text-align: center;
+
+                li {
+                    padding: 0 5px;
+
+                    a {
+                        font-size: $font12;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                        &:before {
+                            content: '> ';
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-area {
+            ul {
+                li {
+                    a {
+                        border: 1px solid;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        i {
+                            width: unset;
+                            font-size: $font15;
+                        }
+                    }
+
+                    .pinterest {
+                        &:hover {
+                            color: #222;
+                        }
+                    }
+
+                    .facebook {
+                        &:hover {
+                            color: #222;
+                        }
+                    }
+
+                    .twitter {
+                        &:hover {
+                            color: #222;
+                        }
+                    }
+
+                    .instagram {
+                        &:hover {
+                            color: #222;
+                        }
+                    }
+
+                    .youtube {
+                        &:hover {
+                            color: #222;
+                        }
+                    }
+
+                    .linkedin {
+                        &:hover {
+                            color: #222;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright-area {
+        background: #fff;
+        color: #989898;
+        font-size: $font11;
+    }
+}
