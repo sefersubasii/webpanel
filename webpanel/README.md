@@ -1,1 +1,3 @@
-# Doğuşçay Website Projesi
+#  Website Projesi
+
+Sefer SUBAŞI 2020
